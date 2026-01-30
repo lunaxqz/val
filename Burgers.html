@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Buy Burgers!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+
+<!--Header-->
+  <header style="margin-bottom: 20px; display: flex; align-items: center;">
+    <img src="https://media.istockphoto.com/id/1184633031/vector/cartoon-burger-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=Z66WFszea0EkDxLe2179qxjBi4zvsOVvQsZ3AbQRjB8=" alt="burger" style="width:50px; height:50px; margin-right:8px;">
+    <h1 style="color: maroon;">Buy Burgers for a Friend!</h1>
+    <img src="https://media.istockphoto.com/id/1184633031/vector/cartoon-burger-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=Z66WFszea0EkDxLe2179qxjBi4zvsOVvQsZ3AbQRjB8=" alt="burger" style="width:50px; height:50px; margin-left:8px;">
+  </header>
+
+
+  <main>
+    <form action="" method="post">
+
+<!--For Customer Info Input-->
+      <fieldset style="margin-bottom: 15px; padding: 15px;">
+        <legend style="font-weight: bold;">Customer Info</legend>
+
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email for Delivery Updates:</label><br>
+        <input type="email" id="email" name="email" placeholder="(Optional)">
+      </fieldset>
+
+<!--For Order Details-->
+      <fieldset style="margin-bottom: 15px; padding: 15px;">
+        <legend style="font-weight: bold;">Order Details</legend>
+
+        <label for="restaurant">Restaurant:</label><br>
+        <select name="restaurant" id="restaurant" required>
+          <option value=""> Select a restaurant </option>
+          <option value="mcdonalds">McDonald's</option>
+          <option value="wendys">Wendy's</option>
+          <option value="jollibee">Jollibee</option>
+          <option value="manginasal">Mang Inasal</option>
+          <option value="kfc">KFC</option>
+        </select><br><br>
+
+        <label for="variants">Burger Variant:</label><br>
+        <input type="text" id="variants" name="variants" list="var" placeholder="Single Patty" required>
+
+        <datalist id="var">
+          <option value="Single Patty">
+          <option value="Double Patty">
+          <option value="Triple Patty">
+          <option value="Quad Patty">
+          <option value="Classic Cheeseburger">
+          <option value="Double Cheeseburger">
+          <option value="Stuffed Cheeseburger">
+        </datalist><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" placeholder="0" required>
+      </fieldset>
+
+<!--For Extras-->
+      <fieldset style="margin-bottom: 15px; padding: 15px;">
+        <legend style="font-weight: bold;">Extras</legend>
+
+        <label>Add Drinks?</label><br>
+        <input type="radio" id="yes" name="drinks" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="drinks" value="no">
+        <label for="no">No</label><br><br>
+
+        <label for="size">Drink Size:<br>small-medium-large</label><br>
+        <input type="range" id="size" name="size" min="1" max="3"><br><br>
+
+        <label for="color">Packaging Color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label>Add-ons:</label><br>
+        <input type="checkbox" id="extra-ketchup" name="addons" value="ketchup">
+        <label for="extra-ketchup">Extra Ketchup</label><br>
+
+        <input type="checkbox" id="extra-mayonnaise" name="addons" value="mayonnaise">
+        <label for="extra-mayonnaise">Extra Mayonnaise</label><br>
+
+        <input type="checkbox" id="extra-lettuce" name="addons" value="lettuce">
+        <label for="extra-lettuce">Extra Lettuce</label>
+      </fieldset>
+
+<!--For The User Address-->
+      <fieldset style="margin-bottom: 15px; padding: 15px;">
+        <legend style="font-weight: bold;">Delivery Address</legend>
+
+        <label for="address">Full Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="street, barangay, city" required></textarea><br><br>
+
+        <label for="landmark">Upload Landmark Image (optional):</label><br>
+        <input type="file" id="landmark" name="landmark">
+      </fieldset>
+
+<!--For The Delivery Date-->
+      <fieldset style="margin-bottom: 15px; padding: 15px;">
+        <legend style="font-weight: bold;">Delivery</legend>
+
+        <label for="deliverytime">When to Deliver:</label><br>
+        <input type="datetime-local" id="deliverytime" name="deliverytime">
+      </fieldset>
+
+      <input type="submit" value="Order!">
+
+    </form>
+  </main>
+
+<!--Name & Section-->
+  <footer style="margin-top: 20px;">
+    <p>Huerta, Franco Antonio J. | BSCS 1-B
+  </footer>
+
+</body>
+</html>
